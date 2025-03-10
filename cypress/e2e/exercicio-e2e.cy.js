@@ -9,9 +9,9 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
   });
 
   it('Fluxo de pedido para compra de 4 produtos', () => {
-    produtosPage.buscarProduto('Ajax Full-Zip Sweatshirt')
-    produtosPage.addProdutoCarrinho('M', 'Blue', 1)
-    cy.get('.woocommerce-message').should('contain', '“Ajax Full-Zip Sweatshirt” foi adicionado no seu carrinho.')
+    produtosPage.buscarProduto('Argus All-Weather Tank')
+    produtosPage.addProdutoCarrinho('S', 'Gray', 1)
+    cy.get('.woocommerce-message').should('contain', '“Argus All-Weather Tank” foi adicionado no seu carrinho.')
 
     let qtd = 2
     produtosPage.buscarProduto('Aether Gym Pant')
@@ -46,9 +46,9 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
     cy.get('#payment_method_bacs').click()
     cy.get('#terms').click()
     cy.get('#place_order').click()
+    cy.get('.woocommerce-thankyou-order-received').should('contain', 'Obrigado. Seu pedido foi recebido.')
 
-
-
+        
     });
     
   });
