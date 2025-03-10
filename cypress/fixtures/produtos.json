@@ -1,0 +1,21 @@
+[
+    {
+        "nomeProduto": "Augusta Pullover Jacket",
+        "tamanho": "S",
+        "cor":"Red",
+        "quantidade": 5
+    },
+    {
+        "nomeProduto": "Balboa Persistence Tee",
+        "tamanho": "S",
+        "cor":"Gray",
+        "quantidade": 6
+    },
+    {
+        "nomeProduto": "Cassia Funnel Sweatshirt",
+        "tamanho": "XS",
+        "cor":"Purple",
+        "quantidade": 1
+    }
+]
+
