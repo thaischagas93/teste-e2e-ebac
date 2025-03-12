@@ -45,10 +45,10 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
     cy.get('#account_password').type(faker.internet.password())
     cy.get('#payment_method_bacs').click()
     cy.get('#terms').click()
-    cy.get('#place_order').click()
+    cy.get('#place_order').click( { force:true } )
     cy.get('.woocommerce-thankyou-order-received').should('contain', 'Obrigado. Seu pedido foi recebido.')
-
-        
+   
+           
     });
     
   });
